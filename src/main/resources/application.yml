@@ -1,0 +1,8 @@
+server:
+  port: 8888
+ 
+spring:
+  application:    name: myvalue
+  cloud:    config:      server:        git:          uri: https://github.com/CGonzalez97/Config-Server.git
+          default-label: main
+          search-paths:          - '*service'
